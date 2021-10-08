@@ -1,0 +1,18 @@
+nav 
+    {
+        background-color: black;
+        padding-top: 20px ;
+        padding-bottom: 20px;
+        color: white;
+
+
+    }
+
+a#logo
+        {
+           margin-left: 20px;
+           margin-right: 40px;
+
+        }
+
+    
