@@ -1,55 +1,269 @@
 <!doctype html>
-<html lang="en">
+
+<html lang="pt-br">
   <head>
-   
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" href="c:a1/trabalho/bootstrap.css">
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>    
+    <link rel="stylesheet" type="text/css" href="c:a1/trabalho/Alfa.css">
+    
     <title>Alfamídia</title>
 
   </head>
+  
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="http://aluno.alfamidia.com.br/App/view/site/alfa/img/logo.jpg"></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a id="navegador" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos</a>  
+              
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                <li><a class="dropdown-item" href="#">Desenvolvedor Web e Java</a></li>
+                <li hr class="dropdown-divider" style="border-color:black"></li>
+                <li><a class="dropdown-item" href="#">Design, Marketing e Vídeo</a></li>
+                <li class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Marketing Digital</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item">              
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Plano Anual</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Próximos Eventos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Blog</a>
+            </li>          
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://github.com/skywalkapps/bootstrap-navbar-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>Acesso ao Aluno</a>
+            </li>
+              
+            <form class="d-flex">
+              <input id="buscar" class="form-control me-2" type="search" placeholder="Buscar Cursos" aria-label="Search">
+              <button id="nav" class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      
+      <div id="menu" class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="http://www.alfamidia.com.br/curso-de-programacao"><img src="c:a1/trabalho/imagens/java.jpg" class="d-block w-100" alt="curso web java"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 id="inicial"><a id="laranja"> Desenvolvedor</a> Web e Java</h5>
+            <p id="inicial" >Lorem ipsum enim venenatis hac bibendum tempor ac, fames sagittis donec nullam sociosqu fringilla elementum, lacus aptent etiam netus a mollis. massa enim integer </p>
+          </div>
+        </div>            
+       
 
-    
-    
+        <div class="carousel-item">
+          <a href="http://www.alfamidia.com.br/online/design-grafico-online/"><img src="c:a1/trabalho/imagens/web.jpg" class="d-block w-100"alt="curso desing"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 id="inicial">Design, <a id="laranja"> Marketing</a> e Vídeo </h5>
+            <p id="inicial">Aliquet nisl aenean tortor enim pharetra rhoncus ut, morbi dapibus litora netus egestas tincidunt lacinia semper, sit nulla turpis urna congue consectetur. volutpat mauris </p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <a href="http://www.alfamidia.com.br/curso-de-marketing-digital"><img src="c:a1/trabalho/imagens/mk.jpg" class="d-block w-100" alt="curso Marketing"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 id="inicial">Marketing <a id="laranja"> Digital</a></h5>
+            <p id="inicial">Magna tortor tincidunt metus faucibus ad nibh pulvinar dui fames ad, maecenas vulputate aenean blandit turpis ut auctor cursus sagittis quis semper, luctus fusce morbi.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <a href="https://www.youtube.com/watch?v=qm1Clv5IjOQ"><img src="c:a1/trabalho/imagens/you.jpg" class="d-block w-100" alt="Live youtube"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 id="inicial">Conheça nossas lives</a></h5>
+            <p id="iniciall">50 Bits de Liberdade</p>
+          </div>
+        </div>   
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+      
+    <div id="owlcard" class="owl-carousel owl-theme">
+      <div class="card">
+        <img id=card src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg" class="card-img-top" alt="card Desenvolvedor Web e Java">
+        <div class="card-body">
+          <h5 class="card-title">Desenvolvedor Web e Java</h5>
+          <p class="card-text">Ultrices etiam nulla etiam at senectus etiam neque metus, suspendisse nisl platea enim vehicula dictum sollicitudin purus, conubia nam hac fermentum curae at orci. est semper libero ullamcorper volutpat, et sem primis.</p>
+          <center><a id="aqui" href="#" class="btn btn-primary">Saiba mais</a></center>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img id=card src="https://cdn.pixabay.com/photo/2015/04/20/13/17/work-731198_960_720.jpg" class="card-img-top" alt="card Desing, Marketing e Vídeo">
+        <div class="card-body">
+          <h5 class="card-title">Desing, Marketing e Vídeo</h5>
+          <p class="card-text">Odio integer potenti molestie eget integer enim cursus, ornare non curabitur convallis sem ante cras ullamcorper, sem justo arcu ut amet integer. placerat dapibus libero iaculis eros orci arcu ornare tempus.</p>
+          <center><a id="aqui" href="#" class="btn btn-primary">Saiba mais</a></center>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img id=card src="https://cdn.pixabay.com/photo/2014/03/22/22/17/phone-292994_960_720.jpg/" class="card-img-top" alt="card Marketing Digital">
+        <div class="card-body">
+          <h5 class="card-title">Marketing Digital</h5>
+          <p class="card-text">Torquent praesent litora risus leo consectetur sit blandit semper quisque conubia, fermentum malesuada rhoncus quisque eu lorem eros urna. facilisis suspendisse viverra himenaeos quam cubilia aptent in suspendisse magna.</p>
+          <center><a id="aqui" href="#" class="btn btn-primary">Saiba mais</a></center>
+        </div>
+      </div>
+      
+      <div  class="card">
+        <img id=card src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849821_960_720.jpg" class="card-img-top" alt="card Plano Anual">
+        <div class="card-body">
+          <h5 class="card-title">Plano Anual</h5>
+          <p class="card-text">Tristique mauris aliquam vehicula semper aptent neque viverra nec lectus, iaculis dolor sociosqu nunc vivamus curae maecenas curae. urna ac donec vitae curabitur eros egestas gravida leo habitasse lacus suscipit blandit.</p>
+          <center><a id="aqui" href="#" class="btn btn-primary">Saiba mais</a></center>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img id=card src="https://cdn.pixabay.com/photo/2015/01/05/16/48/hands-589475_960_720.png" class="card-img-top" alt="card Conteúdos no Youtube">
+        <div class="card-body">
+          <h5 class="card-title">Conteúdos no Youtube</h5>
+          <p class="card-text">Feugiat viverra proin euismod ad lacinia ultricies torquent cras turpis placerat, lorem et id malesuada ad vulputate amet vulputate fusce, sociosqu himenaeos vulputate congue rutrum integer neque curabitur taciti.</p>
+          <center><a id="aqui" href="#" class="btn btn-primary">Saiba mais</a></center>
+        </div>
+      </div>         
+    </div>
+
+    <div id="video" class="container-fluid">
+      <h1 id="lives">Assista nossas Lives</h1>
+      <center id="video" ><iframe width="560" height="315" src="https://www.youtube.com/embed/qm1Clv5IjOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="a"></iframe></center>
+    </div>      
+      
+    <footer class="text-center text-lg-start text-white">
+      <section id="social" class="d-flex justify-content-between p-3">
+        <div class="me-5">
+          <span>Siga nossas redes sociais:</span>
+        </div>
+      
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="bi bi-facebook"></i></a>
+          <a href="" class="text-white me-4">
+            <i class="bi bi-twitter"></i></a>
+          <a href="" class="text-white me-4">
+            <i class="bi bi-instagram"></i></a>
+          <a href="" class="text-white me-4">
+            <i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </section>
+        
+      <section class="">
+        <div class="container text-center text-md-start mt-4">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Alfamidia Educação Profissional</h6>
+              <hr id="linha" class="mb-4 mt-0 d-inline-block mx-auto"style=""/>
+                <p>A Alfamidia trabalha com  objetivo de treinar, orientar e capacitar profissionais.<p>
+                <p>Fundada em 1999 com sede na Avenida Cristóvão Colombo 1496, Porto Alegre/RS.</p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Cursos</h6>
+              <hr id="linha" class="mb-4 mt-0 d-inline-block mx-auto"/>        
+                <p><a href="#!" class="text-white">Desenvolvedor Web e Java</a></p>
+                <p><a href="#!" class="text-white">Marketing Digital</a></p>
+                <p><a href="#!" class="text-white">Design, Marketing e Vídeo</a></p>
+                <p><a href="#!" class="text-white">Plano Anual</a></p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Links Úteis</h6>
+              <hr id="linha" class="mb-4 mt-0 d-inline-block mx-auto"/>
+                <p><a href="#" class="text-white">Blog</a></p>
+                <p><a href="#" class="text-white">Próximos Eventos</a></p>
+                <p><a href="#" class="text-white">política de privacidade</a></p>
+                <p><a href="#" class="text-white">termos de uso</a></p>
+            </div>       
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold">Contato</h6>
+              <hr id="linha" class="mb-4 mt-0 d-inline-block mx-auto"/>
+                <p><i class="bi bi-building"></i> Av. Cristóvão Colombo 1496 Floresta - Porto Alegre/RS CEP: 90560001</p>
+                <p><i class="bi bi-envelope"> </i>info@alfamidia.com.br</p>
+                <p><i class="bi bi-telephone-forward"> </i> Fone: (51) 30732100</p>
+                <p><i class="bi bi-whatsapp"> </i> whatsapp</p>                
+            </div>
+          </div>
+        </div>
+      </section>
+          
+      <div id= "copy" class="text-center p-1">Copyright: <a class="text-white" href="https://mdbootstrap.com/"> Samuel Mourão</a>
+      </div>
+
+    </footer>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>$('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:40,
+      nav:true,
+      navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+      responsive:
+      { 
+        0:{items:1},
+        600:{items:3},
+        1000:{items:3}}
+      });
+    </script>
+    <script>$
+      
+    </script>
   </body>
 </html>
