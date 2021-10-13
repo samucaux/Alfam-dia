@@ -2,13 +2,18 @@
 
 nav
 {
-    background-color:black;">
+    background-color:black;>
+}
+
+a#logo
+{
+    margin-bottom: 6px;
 }
 
 a#navegador
 {
     color:white;
-
+    font-size: 130%;
 }
 
 ul.dropdown-menu
@@ -20,30 +25,38 @@ a.dropdown-item
 {
     color: white;
     margin-bottom: 10px;
-
 }
+
 a.dropdown-item:hover
 {
     color: white;
     background-color: black;
 }
-li.dropdown-divider {
-      
-        background-color: black;
-        color: black;
-    }
 
+li.dropdown-divider 
+{      
+    background-color: black;
+    color: black;
+}
 
 input#buscar
 {
-    width:70%
+    width:70%;
+    height:70%;
+    margin-top: 9px;
 }
 
 button#nav
 {
     background-color:#f68e20;
     color: black;
-    font-weight: bold;
+    height:70%;
+    width: 20%;
+    margin-top: 9px;
+    padding-bottom: 10px;
+    padding-top: 1px;
+    border-color: black;
+
 }
 
 a#acesso
@@ -54,14 +67,13 @@ a#acesso
 svg
 {
     color: #f68e20;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
     margin-right: 4px;
 }  
 
 a#laranja
 { 
     color: #f68e20;
-
 }
 
 h5#inicial
@@ -80,7 +92,6 @@ p#iniciall
     color: #f68e20;
     font-weight: bold;
 }
-
 
 div.card
 {
@@ -101,11 +112,12 @@ a#aqui
     background-color:#f68e20;
     color: black;
     border-color: black;
+    font-weight: bold;
+    border-color: white;
 }
 
 div#video
 {   
-    
     text-align: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -116,15 +128,14 @@ div#video
 h1#lives
 {
     margin-bottom: 40px;
-    text-decoration-line: underline;
+    font-size: 200%;   
 }
 
 iframe
 {
-    width: 860px;
-    height: 615px;
+    width: 560px;
+    height: 315px;
 }
-
 
 footer
 {
@@ -140,8 +151,6 @@ section#social
 {
     background-color: #f68e20;
     font-size: 20px;
-
-
 }
 
 footer
@@ -156,6 +165,7 @@ hr#linha
     height: 2px
 }
 
-div#copy
-{
+
+
+
     
